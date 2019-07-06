@@ -10,10 +10,10 @@ public class PointList {
         list = new Point[cap];
     }
 
-    public void add(double lat, double lon) {
+    public void add(Point point) {
         if (size == list.length)
             list = grow();
-        list[size] = new Point(lat, lon);
+        list[size] = point;
         size++;
     }
 
